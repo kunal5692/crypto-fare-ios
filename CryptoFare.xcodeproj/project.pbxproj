@@ -12,6 +12,7 @@
 		8ABDCBC82146DE100005DB37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ABDCBC62146DE100005DB37 /* Main.storyboard */; };
 		8ABDCBCA2146DE110005DB37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ABDCBC92146DE110005DB37 /* Assets.xcassets */; };
 		8ABDCBCD2146DE110005DB37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ABDCBCB2146DE110005DB37 /* LaunchScreen.storyboard */; };
+		8ABF662D21483275007BC3E5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABF662C21483275007BC3E5 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		8ABDCBC92146DE110005DB37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8ABDCBCC2146DE110005DB37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8ABDCBCE2146DE110005DB37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ABF662C21483275007BC3E5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		8ABDCBC12146DE100005DB37 /* CryptoFare */ = {
 			isa = PBXGroup;
 			children = (
+				8ABDCBD72146DFAC0005DB37 /* Models */,
+				8ABDCBD62146DFA00005DB37 /* Views */,
+				8ABDCBD52146DF930005DB37 /* ViewControllers */,
+				8ABDCBD42146DF870005DB37 /* Network */,
 				8ABDCBC22146DE100005DB37 /* AppDelegate.swift */,
-				8ABDCBC42146DE100005DB37 /* ViewController.swift */,
 				8ABDCBC62146DE100005DB37 /* Main.storyboard */,
 				8ABDCBC92146DE110005DB37 /* Assets.xcassets */,
 				8ABDCBCB2146DE110005DB37 /* LaunchScreen.storyboard */,
 				8ABDCBCE2146DE110005DB37 /* Info.plist */,
 			);
 			path = CryptoFare;
+			sourceTree = "<group>";
+		};
+		8ABDCBD42146DF870005DB37 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8ABF662C21483275007BC3E5 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8ABDCBD52146DF930005DB37 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8ABDCBC42146DE100005DB37 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8ABDCBD62146DFA00005DB37 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8ABDCBD72146DFAC0005DB37 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ABF662D21483275007BC3E5 /* NetworkManager.swift in Sources */,
 				8ABDCBC52146DE100005DB37 /* ViewController.swift in Sources */,
 				8ABDCBC32146DE100005DB37 /* AppDelegate.swift in Sources */,
 			);
